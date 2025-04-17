@@ -1,6 +1,9 @@
-from scrapers.x_scraper import scrape_x
-from scrapers.reddit_scraper import scrape_reddit
-from scrapers.telegram_scraper import scrape_telegram
+import sys
+sys.path.append('./scrapers')
+
+from x_scraper import scrape_x
+from reddit_scraper import scrape_reddit
+from telegram_scraper import scrape_telegram
 import asyncio, json, csv, os
 
 keyword = input("Masukkan keyword pencarian: ")
